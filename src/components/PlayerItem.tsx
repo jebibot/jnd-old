@@ -37,7 +37,9 @@ export default function PlayerItem(props: PlayerItemProps) {
       </td>
       <td className="p-1">
         <div>
-          <div>{NumberFormat.format(m.totalDamageDealtToChampions)}</div>
+          <div title={`총 피해량: ${NumberFormat.format(m.totalDamageDealt)}`}>
+            {NumberFormat.format(m.totalDamageDealtToChampions)}
+          </div>
           <div className="w-12 md:w-16 h-2">
             <div
               className="h-2 bg-red-500"
