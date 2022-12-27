@@ -94,7 +94,7 @@ export default function PlayerItem(props: PlayerItemProps) {
       </td>
       <td className="p-1">
         {m.replayUrl && (
-          <a href={m.replayUrl}>
+          <a href={m.replayUrl} target="_blank" rel="noreferrer noopener">
             <img
               className="w-6"
               src={
