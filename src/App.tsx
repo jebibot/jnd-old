@@ -213,8 +213,16 @@ function App() {
         ></Match>
       ))}
       <div className="text-center text-sm text-gray-500">
-        결과에서 제외하거나 관전 녹화본이 필요하신 경우 tjebibot@gmail.com으로
-        문의 부탁드립니다.
+        결과에서 제외하거나 관전 리플레이가 필요하신 경우{" "}
+        <a href="mailto:tjebibot@gmail.com">tjebibot@gmail.com</a>으로 문의
+        부탁드립니다.
+      </div>
+      <div className="text-center text-sm text-gray-400">
+        jnd.twitchgg.tv isn't endorsed by Riot Games and doesn't reflect the
+        views or opinions of Riot Games or anyone officially involved in
+        producing or managing Riot Games properties. Riot Games, and all
+        associated properties are trademarks or registered trademarks of Riot
+        Games, Inc.
       </div>
     </div>
   );
