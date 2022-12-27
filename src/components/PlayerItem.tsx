@@ -38,7 +38,7 @@ export default function PlayerItem(props: PlayerItemProps) {
       <td className="p-1">
         <div>
           <div>{NumberFormat.format(m.totalDamageDealtToChampions)}</div>
-          <div className="w-16 h-2">
+          <div className="w-12 md:w-16 h-2">
             <div
               className="h-2 bg-red-500"
               style={{
@@ -54,7 +54,7 @@ export default function PlayerItem(props: PlayerItemProps) {
       <td className="p-1">
         <div>
           <div>{NumberFormat.format(m.totalDamageTaken)}</div>
-          <div className="w-16 h-2">
+          <div className="w-12 md:w-16 h-2">
             <div
               className="h-2 bg-orange-500"
               style={{
