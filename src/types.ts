@@ -1,0 +1,23 @@
+export type MatchData = {
+  gameId: number;
+  teamId: boolean;
+  summonerName: string;
+  championId: number;
+  gameLength: number;
+  gameStartTime: number;
+  level: number;
+  win: boolean;
+  kills: number;
+  deaths: number;
+  assists: number;
+  totalDamageDealt: number;
+  totalDamageDealtToChampions: number;
+  totalDamageTaken: number;
+  minionsKilled: number;
+  goldEarned: number;
+  wardPlaced: number;
+  wardKilled: number;
+  visionScore: number;
+  items: number[];
+  replayUrl?: string;
+};
