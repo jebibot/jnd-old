@@ -43,7 +43,7 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
           show((prev) => !prev);
         }}
       >
-        <div className="p-4">
+        <div className="p-2 sm:p-4">
           <div className="font-bold">{match.win ? "승리" : "패배"}</div>
           <div>
             {Math.floor(match.gameLength / 60)}분 {match.gameLength % 60}초
