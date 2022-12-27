@@ -123,6 +123,9 @@ function App() {
         <div>
           <div className="p-2">
             <span className="text-4xl font-bold align-middle">{player}</span>
+            <span className="text-3xl text-gray-500 align-middle ml-1">
+              {playerData.lolName}
+            </span>
             <img
               className="w-8 h-8 inline-block mx-2"
               src={`images/ranked-positions/Position_${playerData.tier}-${playerData.pos}.png`}
