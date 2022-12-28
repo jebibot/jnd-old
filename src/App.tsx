@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { TooltipProvider, Tooltip } from "react-tooltip";
 import Match from "./components/Match";
 import Champion from "./components/Champion";
+import { getTeam, TEAMS } from "./team";
 import { getKDA } from "./utils";
 import { MatchData } from "./types";
 
@@ -116,10 +117,14 @@ function App() {
             setPlayer(e.currentTarget.value);
           }}
         >
-          {Object.keys(players).map((name) => (
-            <option key={name} value={name}>
-              {name}
-            </option>
+          {TEAMS.map((team, i) => (
+            <optgroup key={team.name} label={team.name} className={team.color}>
+              {playerKeys.slice(5 * i, 5 * i + 5).map((name) => (
+                <option key={name} value={name}>
+                  {name}
+                </option>
+              ))}
+            </optgroup>
           ))}
         </select>
         <div className="flex flex-row items-center bg-gray-200 rounded-lg p-2 m-2">
@@ -131,7 +136,13 @@ function App() {
           ></img>
           <div>
             <div className="p-2">
-              <span className="text-4xl font-bold align-middle">{player}</span>
+              <span
+                className={`text-4xl font-bold align-middle ${
+                  getTeam(player).color
+                }`}
+              >
+                {player}
+              </span>
               <span className="text-3xl text-gray-500 align-middle ml-1">
                 {playerData.lolName}
               </span>

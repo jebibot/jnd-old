@@ -9,32 +9,43 @@
     "tier": "Plat",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/dbb514f1-469b-479e-b5ba-3ac0f09a2776-profile_image-300x300.png"
   },
-  "룩삼": {
-    "lolName": "봉춤진효",
-    "twitchId": "looksam",
-    "youtube": "UCQLfdihF1WwbuVcgJq6x6Iw",
-    "youtubeFull": "UCdK6AuoJzDDElLprkD18KZA",
-    "cafe": "looksamfancafe",
-    "pos": "Top",
+  "쌍베": {
+    "lolName": "IlIIIIIlllIIllll",
+    "twitchId": "pacific8815",
+    "youtube": "UCvG7coejM6UD_rOnuDdIoFw",
+    "youtubeFull": "UCMFCklj5BcP-XGyPz-U2a5w",
+    "pos": "Jungle",
+    "tier": "Silver",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/481c81b7-573b-4d8e-a06e-2b5b91464e56-profile_image-300x300.jpg"
+  },
+  "눈꽃": {
+    "lolName": "눈쩔티비",
+    "twitchId": "dktkduftla",
+    "youtube": "UCnxOGZwppMFnMYS-eUJtwXw",
+    "tgd": "dktkduftla",
+    "pos": "Mid",
+    "tier": "Diamond",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/c5649fa1-b3bc-4cce-b218-3b3d0f89951a-profile_image-300x300.png"
+  },
+  "박나나": {
+    "lolName": "박나나",
+    "twitchId": "hm716",
+    "youtube": "UCS3_H_feQRm4QbXipKTvSrw",
+    "youtubeFull": "UCfoZPS7lrlAawCuvB8V_x4A",
+    "cafe": "parknana",
+    "pos": "Bot",
     "tier": "Gold",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/d1c04945-21aa-4e5b-8b94-86f2be895e0d-profile_image-300x300.png"
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/5a02a46e-e228-4c02-8e37-39b8545e8b40-profile_image-300x300.png"
   },
-  "중력": {
-    "lolName": "진지빡겜 중력",
-    "twitchId": "jungryeok",
-    "youtube": "UCyw-SlgJoR9KDaE6TWeYI-A",
-    "pos": "Top",
-    "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/84a3bbe6-fa69-477a-8eb5-5d6a958f4d77-profile_image-300x300.png"
-  },
-  "치킨쿤": {
-    "lolName": "칰지컬",
-    "twitchId": "ch1ckenkun",
-    "youtube": "UCD4PvWa8T2SpKo3Ml6KUpKg",
-    "cafe": "ch1ckenkun",
-    "pos": "Top",
-    "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/ch1ckenkun-profile_image-85a9e0da8aef66c1-300x300.png"
+  "던": {
+    "lolName": "게임만열심히",
+    "twitchId": "dawnhs",
+    "youtube": "UC_jqDoiHorunEwWNQw5M3IA",
+    "youtubeFull": "UC2savL54deiUifGeHKjgLig",
+    "tgd": "dawnhs",
+    "pos": "Support",
+    "tier": "Gold",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/f74aa625-56bb-46d0-b590-ac165695825f-profile_image-300x300.png"
   },
   "김뿡": {
     "lolName": "깨스킴",
@@ -56,83 +67,6 @@
     "tier": "Silver",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/5f4dd88e-4520-4fde-bedb-ba7d4ea54001-profile_image-300x300.png"
   },
-  "삼식": {
-    "lolName": "탐죵이죵",
-    "twitchId": "inecr7024",
-    "youtube": "UCMOOio1GZ50OeJT58DGBQCA",
-    "youtubeFull": "UCrIeRc9ca6xvd7nw0OarcAA",
-    "tgd": "inecr7024",
-    "pos": "Jungle",
-    "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/fece65a7-d039-4637-aa01-3c5e5c07f467-profile_image-300x300.png"
-  },
-  "스나랑": {
-    "lolName": "마이구미 먹방",
-    "twitchId": "snarang",
-    "youtube": "UCNYV6yOqwfY863iKiGVjGGQ",
-    "youtubeFull": "UCfPC-CKqhZxIS5zdQxmln3Q",
-    "cafe": "snarang",
-    "pos": "Jungle",
-    "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/e9f30125-9383-4dfc-a18d-8ad944e36e56-profile_image-300x300.png"
-  },
-  "쌍베": {
-    "lolName": "IlIIIIIlllIIllll",
-    "twitchId": "pacific8815",
-    "youtube": "UCvG7coejM6UD_rOnuDdIoFw",
-    "youtubeFull": "UCMFCklj5BcP-XGyPz-U2a5w",
-    "pos": "Jungle",
-    "tier": "Silver",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/481c81b7-573b-4d8e-a06e-2b5b91464e56-profile_image-300x300.jpg"
-  },
-  "남봉": {
-    "lolName": "남봉 해줘",
-    "twitchId": "kimnamsoon",
-    "youtube": "UCjLam2TWjQ2BG0y0H4Q9RbQ",
-    "cafe": "bjcrocodile",
-    "pos": "Jungle",
-    "tier": "Gold",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/b36eff51-f34f-40d7-b613-7b7b4f9193ea-profile_image-300x300.png"
-  },
-  "류제홍": {
-    "lolName": "AP캐리 류제홍",
-    "twitchId": "wpghd321",
-    "youtube": "UCtt0Hg9MhraTkzWwNQpplHg",
-    "youtubeFull": "UC5IqUZcxRA5SqyuQRguttPw",
-    "tgd": "wpghd321",
-    "pos": "Mid",
-    "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/adb62723-be04-4b89-bae9-15c8ac9ecf54-profile_image-300x300.png"
-  },
-  "도현": {
-    "lolName": "천하제일후기지수",
-    "twitchId": "d_obby",
-    "youtube": "UC-Pn1i_ot4qmG4l7wMZPvyw",
-    "youtubeFull": "UC3Oe7cV0chFkp_8wuMBJFWw",
-    "tgd": "d_obby",
-    "pos": "Mid",
-    "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/729fe3eb-facf-4838-a64a-29eaedaee5d7-profile_image-300x300.png"
-  },
-  "눈꽃": {
-    "lolName": "눈쩔티비",
-    "twitchId": "dktkduftla",
-    "youtube": "UCnxOGZwppMFnMYS-eUJtwXw",
-    "tgd": "dktkduftla",
-    "pos": "Mid",
-    "tier": "Diamond",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/c5649fa1-b3bc-4cce-b218-3b3d0f89951a-profile_image-300x300.png"
-  },
-  "감블러": {
-    "lolName": "긍지높은라이너",
-    "twitchId": "9ambler",
-    "youtube": "UCgmQJAJuiddthVUfJmWxltA",
-    "youtubeFull": "UCtJxwAr4vDoNjhsf6lSCuLw",
-    "cafe": "9ambler",
-    "pos": "Mid",
-    "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/29059451-a201-4422-b421-041e49d456f5-profile_image-300x300.png"
-  },
   "김뚜띠": {
     "lolName": "띠 카",
     "twitchId": "kimdduddi",
@@ -142,16 +76,6 @@
     "pos": "Mid",
     "tier": "Plat",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/5ab5d69f-6641-404d-80d3-bc9ac54ea0a8-profile_image-300x300.png"
-  },
-  "따효니": {
-    "lolName": "프로문의는DM으로",
-    "twitchId": "ddahyoni",
-    "youtube": "UCFM_07Mxv6CglREk8qdkPaw",
-    "youtubeFull": "UCRuolFIDKRFuwT6x5uitojw",
-    "cafe": "playingddahyoni",
-    "pos": "Bot",
-    "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/26b1aaa6-189b-444d-996b-29bbe1a53bc3-profile_image-300x300.png"
   },
   "플러리": {
     "lolName": "TLG 플러리",
@@ -163,15 +87,44 @@
     "tier": "Gold",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/ed6ea957-0510-4c23-af4d-ebd79b41ba50-profile_image-300x300.png"
   },
-  "러너": {
-    "lolName": "섹니키",
-    "twitchId": "runner0608",
-    "youtube": "UCi_8nnPZuF1yjgYnhAwb7CA",
-    "youtubeFull": "UC2Ybvc2syF1a5LbHhce-CnA",
-    "tgd": "runner0608",
-    "pos": "Bot",
+  "빅헤드": {
+    "lolName": "Gpem",
+    "twitchId": "bighead033",
+    "youtube": "UCAJ-meoCh1TrPZ7La3UpPrw",
+    "cafe": "bighead033",
+    "pos": "Support",
+    "tier": "Gold",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/bd78cfa0-2a52-4dc1-a719-60621d561879-profile_image-300x300.jpeg"
+  },
+  "룩삼": {
+    "lolName": "봉춤진효",
+    "twitchId": "looksam",
+    "youtube": "UCQLfdihF1WwbuVcgJq6x6Iw",
+    "youtubeFull": "UCdK6AuoJzDDElLprkD18KZA",
+    "cafe": "looksamfancafe",
+    "pos": "Top",
+    "tier": "Gold",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/d1c04945-21aa-4e5b-8b94-86f2be895e0d-profile_image-300x300.png"
+  },
+  "삼식": {
+    "lolName": "탐죵이죵",
+    "twitchId": "inecr7024",
+    "youtube": "UCMOOio1GZ50OeJT58DGBQCA",
+    "youtubeFull": "UCrIeRc9ca6xvd7nw0OarcAA",
+    "tgd": "inecr7024",
+    "pos": "Jungle",
     "tier": "Plat",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/e5da145b-14f7-4555-a550-5d5c9a1d96cf-profile_image-300x300.png"
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/fece65a7-d039-4637-aa01-3c5e5c07f467-profile_image-300x300.png"
+  },
+  "류제홍": {
+    "lolName": "AP캐리 류제홍",
+    "twitchId": "wpghd321",
+    "youtube": "UCtt0Hg9MhraTkzWwNQpplHg",
+    "youtubeFull": "UC5IqUZcxRA5SqyuQRguttPw",
+    "tgd": "wpghd321",
+    "pos": "Mid",
+    "tier": "Plat",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/adb62723-be04-4b89-bae9-15c8ac9ecf54-profile_image-300x300.png"
   },
   "유나땅": {
     "lolName": "발로란트만한사람",
@@ -181,36 +134,6 @@
     "pos": "Bot",
     "tier": "Plat",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/85497883-7624-427b-b9f6-179f7e591fa7-profile_image-300x300.jpeg"
-  },
-  "박나나": {
-    "lolName": "박나나",
-    "twitchId": "hm716",
-    "youtube": "UCS3_H_feQRm4QbXipKTvSrw",
-    "youtubeFull": "UCfoZPS7lrlAawCuvB8V_x4A",
-    "cafe": "parknana",
-    "pos": "Bot",
-    "tier": "Gold",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/5a02a46e-e228-4c02-8e37-39b8545e8b40-profile_image-300x300.png"
-  },
-  "한동숙": {
-    "lolName": "골없칸왕",
-    "twitchId": "handongsuk",
-    "youtube": "UCVJT18d9wSCnDUdnJ9ycO7Q",
-    "youtubeFull": "UCmN88HSz-EQdwrkGXkc1ElA",
-    "cafe": "khantata",
-    "pos": "Support",
-    "tier": "Gold",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/c5a2baa2-74ed-4b72-b047-8326572c9bfa-profile_image-300x300.png"
-  },
-  "던": {
-    "lolName": "게임만열심히",
-    "twitchId": "dawnhs",
-    "youtube": "UC_jqDoiHorunEwWNQw5M3IA",
-    "youtubeFull": "UC2savL54deiUifGeHKjgLig",
-    "tgd": "dawnhs",
-    "pos": "Support",
-    "tier": "Gold",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/f74aa625-56bb-46d0-b590-ac165695825f-profile_image-300x300.png"
   },
   "이춘향": {
     "lolName": "춘쩔티비",
@@ -222,14 +145,43 @@
     "tier": "Gold",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/21af3d33e8fdcfe9-profile_image-300x300.jpeg"
   },
-  "빅헤드": {
-    "lolName": "Gpem",
-    "twitchId": "bighead033",
-    "youtube": "UCAJ-meoCh1TrPZ7La3UpPrw",
-    "cafe": "bighead033",
-    "pos": "Support",
+  "치킨쿤": {
+    "lolName": "칰지컬",
+    "twitchId": "ch1ckenkun",
+    "youtube": "UCD4PvWa8T2SpKo3Ml6KUpKg",
+    "cafe": "ch1ckenkun",
+    "pos": "Top",
+    "tier": "Plat",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/ch1ckenkun-profile_image-85a9e0da8aef66c1-300x300.png"
+  },
+  "남봉": {
+    "lolName": "남봉 해줘",
+    "twitchId": "kimnamsoon",
+    "youtube": "UCjLam2TWjQ2BG0y0H4Q9RbQ",
+    "cafe": "bjcrocodile",
+    "pos": "Jungle",
     "tier": "Gold",
-    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/bd78cfa0-2a52-4dc1-a719-60621d561879-profile_image-300x300.jpeg"
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/b36eff51-f34f-40d7-b613-7b7b4f9193ea-profile_image-300x300.png"
+  },
+  "감블러": {
+    "lolName": "긍지높은라이너",
+    "twitchId": "9ambler",
+    "youtube": "UCgmQJAJuiddthVUfJmWxltA",
+    "youtubeFull": "UCtJxwAr4vDoNjhsf6lSCuLw",
+    "cafe": "9ambler",
+    "pos": "Mid",
+    "tier": "Plat",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/29059451-a201-4422-b421-041e49d456f5-profile_image-300x300.png"
+  },
+  "따효니": {
+    "lolName": "프로문의는DM으로",
+    "twitchId": "ddahyoni",
+    "youtube": "UCFM_07Mxv6CglREk8qdkPaw",
+    "youtubeFull": "UCRuolFIDKRFuwT6x5uitojw",
+    "cafe": "playingddahyoni",
+    "pos": "Bot",
+    "tier": "Plat",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/26b1aaa6-189b-444d-996b-29bbe1a53bc3-profile_image-300x300.png"
   },
   "연두부": {
     "lolName": "멋진남자노사연",
@@ -240,5 +192,53 @@
     "pos": "Support",
     "tier": "Gold",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/a1281685-d88d-420a-8aeb-437b6851a170-profile_image-300x300.png"
+  },
+  "중력": {
+    "lolName": "진지빡겜 중력",
+    "twitchId": "jungryeok",
+    "youtube": "UCyw-SlgJoR9KDaE6TWeYI-A",
+    "pos": "Top",
+    "tier": "Plat",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/84a3bbe6-fa69-477a-8eb5-5d6a958f4d77-profile_image-300x300.png"
+  },
+  "스나랑": {
+    "lolName": "마이구미 먹방",
+    "twitchId": "snarang",
+    "youtube": "UCNYV6yOqwfY863iKiGVjGGQ",
+    "youtubeFull": "UCfPC-CKqhZxIS5zdQxmln3Q",
+    "cafe": "snarang",
+    "pos": "Jungle",
+    "tier": "Plat",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/e9f30125-9383-4dfc-a18d-8ad944e36e56-profile_image-300x300.png"
+  },
+  "도현": {
+    "lolName": "천하제일후기지수",
+    "twitchId": "d_obby",
+    "youtube": "UC-Pn1i_ot4qmG4l7wMZPvyw",
+    "youtubeFull": "UC3Oe7cV0chFkp_8wuMBJFWw",
+    "tgd": "d_obby",
+    "pos": "Mid",
+    "tier": "Plat",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/729fe3eb-facf-4838-a64a-29eaedaee5d7-profile_image-300x300.png"
+  },
+  "러너": {
+    "lolName": "섹니키",
+    "twitchId": "runner0608",
+    "youtube": "UCi_8nnPZuF1yjgYnhAwb7CA",
+    "youtubeFull": "UC2Ybvc2syF1a5LbHhce-CnA",
+    "tgd": "runner0608",
+    "pos": "Bot",
+    "tier": "Plat",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/e5da145b-14f7-4555-a550-5d5c9a1d96cf-profile_image-300x300.png"
+  },
+  "한동숙": {
+    "lolName": "골없칸왕",
+    "twitchId": "handongsuk",
+    "youtube": "UCVJT18d9wSCnDUdnJ9ycO7Q",
+    "youtubeFull": "UCmN88HSz-EQdwrkGXkc1ElA",
+    "cafe": "khantata",
+    "pos": "Support",
+    "tier": "Gold",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/c5a2baa2-74ed-4b72-b047-8326572c9bfa-profile_image-300x300.png"
   }
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TooltipWrapper } from "react-tooltip";
+import { getTeam } from "../team";
 import { MatchData } from "../types";
 import { getKDA, getRelativeTime } from "../utils";
 import Champion from "./Champion";
@@ -83,7 +84,10 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
         </div>
         <div className="w-16 break-keep text-sm">
           {myTeam.map((m) => (
-            <div key={m.summonerName}>
+            <div
+              key={m.summonerName}
+              className={`font-medium ${getTeam(m.summonerName).color}`}
+            >
               <Champion
                 championId={m.championId}
                 className="w-4 h-4 inline-block m-0.5"
@@ -95,7 +99,10 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
         <div className="p-2">vs</div>
         <div className="w-16 break-keep text-sm">
           {otherTeam.map((m) => (
-            <div key={m.summonerName}>
+            <div
+              key={m.summonerName}
+              className={`font-medium ${getTeam(m.summonerName).color}`}
+            >
               <Champion
                 championId={m.championId}
                 className="w-4 h-4 inline-block m-0.5"
