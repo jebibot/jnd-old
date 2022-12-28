@@ -46,7 +46,9 @@ export default function PlayerItem(props: PlayerItemProps) {
               isDetailed
                 ? `총 딜량: ${NumberFormat.format(m.totalDamageDealt)}<br />`
                 : ""
-            }${getPerMinute(m.totalDamageDealtToChampions)} DPM`}
+            }${getPerMinute(m.totalDamageDealtToChampions)} DPM<br />${(
+              m.totalDamageDealtToChampions / m.goldEarned
+            ).toFixed(2)} DPG`}
           >
             {NumberFormat.format(m.totalDamageDealtToChampions)}
           </TooltipWrapper>
