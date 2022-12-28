@@ -1,3 +1,4 @@
+import { TooltipWrapper } from "react-tooltip";
 import Champion from "./Champion";
 import { getKDA } from "../utils";
 import { MatchData } from "../types";
@@ -18,6 +19,7 @@ type PlayerItemProps = {
 
 export default function PlayerItem(props: PlayerItemProps) {
   const m = props.match;
+  const getPerMinute = (val: number) => ((val / m.gameLength) * 60).toFixed(1);
   return (
     <tr key={m.summonerName}>
       <td className="p-1">
@@ -37,9 +39,13 @@ export default function PlayerItem(props: PlayerItemProps) {
       </td>
       <td className="p-1">
         <div>
-          <div title={`총 피해량: ${NumberFormat.format(m.totalDamageDealt)}`}>
+          <TooltipWrapper
+            html={`총 딜량: ${NumberFormat.format(
+              m.totalDamageDealt
+            )}<br />${getPerMinute(m.totalDamageDealtToChampions)} DPM`}
+          >
             {NumberFormat.format(m.totalDamageDealtToChampions)}
-          </div>
+          </TooltipWrapper>
           <div className="w-12 md:w-16 h-2">
             <div
               className="h-2 bg-red-500"
@@ -69,14 +75,22 @@ export default function PlayerItem(props: PlayerItemProps) {
           </div>
         </div>
       </td>
-      <td className="p-1">{NumberFormat.format(m.goldEarned)}</td>
       <td className="p-1">
-        {m.minionsKilled} ({((m.minionsKilled / m.gameLength) * 60).toFixed(1)})
+        <TooltipWrapper content={`${getPerMinute(m.goldEarned)} GPM`}>
+          {NumberFormat.format(m.goldEarned)}
+        </TooltipWrapper>
+      </td>
+      <td className="p-1">
+        {m.minionsKilled} ({getPerMinute(m.minionsKilled)})
       </td>
       <td className="p-1">
         {m.wardPlaced} / {m.wardKilled}
       </td>
-      <td className="p-1">{m.visionScore}</td>
+      <td className="p-1">
+        <TooltipWrapper content={`${getPerMinute(m.visionScore)} VSPM`}>
+          {NumberFormat.format(m.visionScore)}
+        </TooltipWrapper>
+      </td>
       <td className="p-1">
         {m.items.map((i: number) => {
           if (i <= 0) {
