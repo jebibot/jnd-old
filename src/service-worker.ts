@@ -72,11 +72,6 @@ registerRoute(
   })
 );
 
-registerRoute(
-  new RegExp("https://jnd-data\\.s3\\.ap-northeast-2\\.amazonaws.com/"),
-  new NetworkFirst({ cacheName: "data" })
-);
-
 // This allows the web app to trigger skipWaiting via
 // registration.waiting.postMessage({type: 'SKIP_WAITING'})
 self.addEventListener("message", (event) => {
