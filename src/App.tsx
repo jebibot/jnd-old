@@ -61,7 +61,8 @@ function App() {
 
   useEffect(() => {
     const abortController = new AbortController();
-    fetch("https://jnd-data.s3.ap-northeast-2.amazonaws.com/data.json?v=2", {
+    fetch("https://jnd-data.s3.ap-northeast-2.amazonaws.com/data.json", {
+      cache: "no-cache",
       signal: abortController.signal,
     })
       .then((r) => r.json())
