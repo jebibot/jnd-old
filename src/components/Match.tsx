@@ -59,7 +59,7 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
           ></Champion>
         </div>
         <div className="w-32 m-2 text-center">
-          <div>{getKDA(match)}</div>
+          <div className="font-bold">{getKDA(match)}</div>
           <div>
             {match.kills}/{match.deaths}/{match.assists} (
             {(((match.kills + match.assists) / myTeamKills) * 100).toFixed()}%)

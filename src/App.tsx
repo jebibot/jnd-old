@@ -217,7 +217,7 @@ function App() {
         <a href="mailto:tjebibot@gmail.com">tjebibot@gmail.com</a>으로 문의
         부탁드립니다.
       </div>
-      <div className="text-center text-sm text-gray-400">
+      <div className="text-center text-xs text-gray-400">
         jnd.twitchgg.tv isn't endorsed by Riot Games and doesn't reflect the
         views or opinions of Riot Games or anyone officially involved in
         producing or managing Riot Games properties. Riot Games, and all
