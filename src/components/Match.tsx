@@ -103,11 +103,11 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
       </div>
       {shown && (
         <div className="m-2 overflow-x-auto">
-          <table className="text-center table-fixed w-[48rem] md:w-[60rem] text-xs md:text-base mx-auto">
+          <table className="text-center table-fixed w-[46rem] md:w-[58rem] text-xs md:text-base mx-auto">
             <thead>
               <tr>
                 <th className="p-1 w-10"></th>
-                <th className="p-1 w-18 md:w-24"></th>
+                <th className="p-1 w-10 md:w-16"></th>
                 <th className="p-1 w-6 md:w-8">Lv.</th>
                 <th className="p-1 w-24 md:w-32">KDA</th>
                 <th className="p-1 w-16 md:w-24">딜량</th>

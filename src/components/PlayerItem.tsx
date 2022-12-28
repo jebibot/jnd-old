@@ -25,7 +25,7 @@ export default function PlayerItem(props: PlayerItemProps) {
       <td className="p-1">
         <Champion championId={m.championId} className="w-8 h-8"></Champion>
       </td>
-      <td className="p-1">{m.summonerName}</td>
+      <td className="p-1 truncate">{m.summonerName}</td>
       <td className="p-1">{m.level}</td>
       <td className="p-1">
         <div>
