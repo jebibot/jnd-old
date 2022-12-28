@@ -27,5 +27,5 @@ const teamMap = Object.fromEntries(
 );
 
 export function getTeam(name: string) {
-  return TEAMS[teamMap[name]];
+  return name in teamMap ? TEAMS[teamMap[name]] : { color: "" };
 }
