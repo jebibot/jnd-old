@@ -27,5 +27,5 @@ const teamMap = Object.fromEntries(
 );
 
 export function getTeam(name: string) {
-  return name in teamMap ? TEAMS[teamMap[name]] : { color: "" };
+  return name in teamMap ? TEAMS[teamMap[name]] : { color: "truncate" };
 }
