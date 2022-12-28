@@ -10,6 +10,7 @@ export type MatchData = {
   kills: number;
   deaths: number;
   assists: number;
+  multiKill: number;
   totalDamageDealt: number;
   totalDamageDealtToChampions: number;
   totalDamageTaken: number;

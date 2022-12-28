@@ -10,6 +10,13 @@ type MatchProps = {
   otherTeam: MatchData[];
 };
 
+const MULTI_KILL: { [num: number]: string } = {
+  2: "더블킬",
+  3: "트리플킬",
+  4: "쿼드라킬",
+  5: "펜타킬",
+};
+
 export default function Match({ match, myTeam, otherTeam }: MatchProps) {
   const [shown, show] = useState(false);
 
@@ -64,6 +71,11 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
             {match.kills}/{match.deaths}/{match.assists} (
             {(((match.kills + match.assists) / myTeamKills) * 100).toFixed()}%)
           </div>
+          {MULTI_KILL[match.multiKill] && (
+            <div className="w-fit px-1 py-0.5 mx-auto my-0.5 rounded-lg bg-orange-500 text-white text-sm">
+              {MULTI_KILL[match.multiKill]}
+            </div>
+          )}
         </div>
         <div className="w-16 break-keep text-sm">
           {myTeam.map((m) => (
