@@ -37,6 +37,7 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
     ...myTeam.map((m) => m.totalDamageTaken),
     ...otherTeam.map((m) => m.totalDamageTaken)
   );
+  const isDetailed = match.totalDamageTaken !== 0;
 
   return (
     <div
@@ -106,7 +107,13 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
       </div>
       {shown && (
         <div className="m-2 overflow-x-auto">
-          <table className="text-center table-fixed w-[46rem] md:w-[58rem] text-xs md:text-base mx-auto">
+          <table
+            className={`text-center table-fixed ${
+              isDetailed
+                ? "w-[46rem] md:w-[58rem]"
+                : "w-[21.5rem] md:w-[28.5rem]"
+            } text-xs md:text-base mx-auto`}
+          >
             <thead>
               <tr>
                 <th className="p-1 w-10"></th>
@@ -114,12 +121,12 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
                 <th className="p-1 w-6 md:w-8">Lv.</th>
                 <th className="p-1 w-24 md:w-32">KDA</th>
                 <th className="p-1 w-16 md:w-24">딜량</th>
-                <th className="p-1 w-16 md:w-24">피해량</th>
+                {isDetailed && <th className="p-1 w-16 md:w-24">피해량</th>}
                 <th className="p-1 w-12 md:w-16">G</th>
-                <th className="p-1 w-10 md:w-14">CS</th>
-                <th className="p-1 w-12 md:w-16">와드</th>
-                <th className="p-1 w-10 md:w-12">VS</th>
-                <th className="p-1 w-52">아이템</th>
+                {isDetailed && <th className="p-1 w-10 md:w-14">CS</th>}
+                {isDetailed && <th className="p-1 w-12 md:w-16">와드</th>}
+                {isDetailed && <th className="p-1 w-10 md:w-12">VS</th>}
+                {isDetailed && <th className="p-1 w-52">아이템</th>}
                 <th className="p-1 w-8"></th>
               </tr>
             </thead>
@@ -131,10 +138,11 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
                   totalKills={myTeamKills}
                   maxDamagesDealt={maxDamagesDealt}
                   maxDamagesTaken={maxDamagesTaken}
+                  isDetailed={isDetailed}
                 ></PlayerItem>
               ))}
               <tr>
-                <td colSpan={11}>vs</td>
+                <td colSpan={isDetailed ? 12 : 7}>vs</td>
               </tr>
               {otherTeam.map((m) => (
                 <PlayerItem
@@ -143,6 +151,7 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
                   totalKills={otherTeamKills}
                   maxDamagesDealt={maxDamagesDealt}
                   maxDamagesTaken={maxDamagesTaken}
+                  isDetailed={isDetailed}
                 ></PlayerItem>
               ))}
             </tbody>

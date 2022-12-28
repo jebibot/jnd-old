@@ -15,10 +15,12 @@ type PlayerItemProps = {
   totalKills: number;
   maxDamagesDealt: number;
   maxDamagesTaken: number;
+  isDetailed: boolean;
 };
 
 export default function PlayerItem(props: PlayerItemProps) {
   const m = props.match;
+  const isDetailed = props.isDetailed;
   const getPerMinute = (val: number) => ((val / m.gameLength) * 60).toFixed(1);
   return (
     <tr key={m.summonerName}>
@@ -40,9 +42,11 @@ export default function PlayerItem(props: PlayerItemProps) {
       <td className="p-1">
         <div>
           <TooltipWrapper
-            html={`총 딜량: ${NumberFormat.format(
-              m.totalDamageDealt
-            )}<br />${getPerMinute(m.totalDamageDealtToChampions)} DPM`}
+            html={`${
+              isDetailed
+                ? `총 딜량: ${NumberFormat.format(m.totalDamageDealt)}<br />`
+                : ""
+            }${getPerMinute(m.totalDamageDealtToChampions)} DPM`}
           >
             {NumberFormat.format(m.totalDamageDealtToChampions)}
           </TooltipWrapper>
@@ -59,55 +63,65 @@ export default function PlayerItem(props: PlayerItemProps) {
           </div>
         </div>
       </td>
-      <td className="p-1">
-        <div>
-          <div>{NumberFormat.format(m.totalDamageTaken)}</div>
-          <div className="w-12 md:w-16 h-2">
-            <div
-              className="h-2 bg-orange-500"
-              style={{
-                width: `${(
-                  (m.totalDamageTaken / props.maxDamagesTaken) *
-                  100
-                ).toFixed(2)}%`,
-              }}
-            ></div>
+      {isDetailed && (
+        <td className="p-1">
+          <div>
+            <div>{NumberFormat.format(m.totalDamageTaken)}</div>
+            <div className="w-12 md:w-16 h-2">
+              <div
+                className="h-2 bg-orange-500"
+                style={{
+                  width: `${(
+                    (m.totalDamageTaken / props.maxDamagesTaken) *
+                    100
+                  ).toFixed(2)}%`,
+                }}
+              ></div>
+            </div>
           </div>
-        </div>
-      </td>
+        </td>
+      )}
       <td className="p-1">
         <TooltipWrapper content={`${getPerMinute(m.goldEarned)} GPM`}>
           {NumberFormat.format(m.goldEarned)}
         </TooltipWrapper>
       </td>
-      <td className="p-1">
-        {m.minionsKilled} ({getPerMinute(m.minionsKilled)})
-      </td>
-      <td className="p-1">
-        {m.wardPlaced} / {m.wardKilled}
-      </td>
-      <td className="p-1">
-        <TooltipWrapper content={`${getPerMinute(m.visionScore)} VSPM`}>
-          {NumberFormat.format(m.visionScore)}
-        </TooltipWrapper>
-      </td>
-      <td className="p-1">
-        {m.items.map((i: number) => {
-          if (i <= 0) {
-            return null;
-          }
-          const item = items[i as unknown as keyof typeof items];
-          return (
-            <img
-              key={i}
-              className="w-6 h-6 inline-block mx-0.5"
-              src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${i}.png`}
-              alt={item.name}
-              title={item.name}
-            ></img>
-          );
-        })}
-      </td>
+      {isDetailed && (
+        <td className="p-1">
+          {m.minionsKilled} ({getPerMinute(m.minionsKilled)})
+        </td>
+      )}
+      {isDetailed && (
+        <td className="p-1">
+          {m.wardPlaced} / {m.wardKilled}
+        </td>
+      )}
+      {isDetailed && (
+        <td className="p-1">
+          <TooltipWrapper content={`${getPerMinute(m.visionScore)} VSPM`}>
+            {NumberFormat.format(m.visionScore)}
+          </TooltipWrapper>
+        </td>
+      )}
+      {isDetailed && (
+        <td className="p-1">
+          {m.items.map((i: number) => {
+            if (i <= 0) {
+              return null;
+            }
+            const item = items[i as unknown as keyof typeof items];
+            return (
+              <img
+                key={i}
+                className="w-6 h-6 inline-block mx-0.5"
+                src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${i}.png`}
+                alt={item.name}
+                title={item.name}
+              ></img>
+            );
+          })}
+        </td>
+      )}
       <td className="p-1">
         {m.replayUrl && (
           <a href={m.replayUrl} target="_blank" rel="noreferrer noopener">

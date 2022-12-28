@@ -48,6 +48,7 @@ type Stats = {
   kills: number;
   deaths: number;
   assists: number;
+  csGames: number;
   cs: number;
 };
 
@@ -76,6 +77,7 @@ function App() {
       kills: 0,
       deaths: 0,
       assists: 0,
+      csGames: 0,
       cs: 0,
     },
   };
@@ -87,7 +89,10 @@ function App() {
     playerStats[m.championId].kills += m.kills;
     playerStats[m.championId].deaths += m.deaths;
     playerStats[m.championId].assists += m.assists;
-    playerStats[m.championId].cs += m.minionsKilled;
+    if (m.minionsKilled) {
+      playerStats[m.championId].csGames++;
+      playerStats[m.championId].cs += m.minionsKilled;
+    }
   }
   for (const c in playerStats) {
     if (c === "0") {
@@ -98,6 +103,7 @@ function App() {
     playerStats["0"].kills += playerStats[c].kills;
     playerStats["0"].deaths += playerStats[c].deaths;
     playerStats["0"].assists += playerStats[c].assists;
+    playerStats["0"].csGames += playerStats[c].csGames;
     playerStats["0"].cs += playerStats[c].cs;
   }
 
@@ -198,7 +204,11 @@ function App() {
                           / {(stat.deaths / stat.games).toFixed(1)} /{" "}
                           {(stat.assists / stat.games).toFixed(1)})
                         </td>
-                        <td>{(stat.cs / stat.games).toFixed(1)}</td>
+                        <td>
+                          {stat.csGames
+                            ? (stat.cs / stat.csGames).toFixed(1)
+                            : "-"}
+                        </td>
                       </tr>
                     );
                   })}
