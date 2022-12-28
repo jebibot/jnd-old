@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TooltipWrapper } from "react-tooltip";
 import { MatchData } from "../types";
 import { getKDA, getRelativeTime } from "../utils";
 import Champion from "./Champion";
@@ -55,9 +56,11 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
           <div>
             {Math.floor(match.gameLength / 60)}분 {match.gameLength % 60}초
           </div>
-          <div title={new Date(match.gameStartTime).toLocaleString()}>
+          <TooltipWrapper
+            content={new Date(match.gameStartTime).toLocaleString()}
+          >
             {getRelativeTime(match.gameStartTime)}
-          </div>
+          </TooltipWrapper>
         </div>
         <div>
           <Champion
