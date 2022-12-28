@@ -114,7 +114,7 @@ export default function PlayerItem(props: PlayerItemProps) {
               <img
                 key={i}
                 className="w-6 h-6 inline-block mx-0.5"
-                src={`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${i}.png`}
+                src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${i}.png`}
                 alt={item.name}
                 title={item.name}
               ></img>
