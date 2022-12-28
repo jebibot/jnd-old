@@ -53,7 +53,7 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
       >
         <div className="p-2 sm:p-4">
           <div className="font-bold">{match.win ? "승리" : "패배"}</div>
-          <div>
+          <div className={match.teamId ? "text-blue-900" : "text-red-900"}>
             {Math.floor(match.gameLength / 60)}분 {match.gameLength % 60}초
           </div>
           <TooltipWrapper
