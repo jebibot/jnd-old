@@ -47,6 +47,16 @@
     "tier": "Gold",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/f74aa625-56bb-46d0-b590-ac165695825f-profile_image-300x300.png"
   },
+  "강퀴": {
+    "lolName": "",
+    "twitchId": "kangqui",
+    "youtube": "UCZ49HaU_D0Tlf1aDA2jU_Vg",
+    "youtubeFull": "UCQaaJNXHcJPDdzGBXybjonw",
+    "tgd": "kangqui",
+    "pos": "coach",
+    "tier": "",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/4b8184a7-41e8-47f8-adc7-4a760e384521-profile_image-300x300.png"
+  },
   "김뿡": {
     "lolName": "깨스킴",
     "twitchId": "bbonge_",
@@ -95,6 +105,15 @@
     "pos": "Support",
     "tier": "Gold",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/bd78cfa0-2a52-4dc1-a719-60621d561879-profile_image-300x300.jpeg"
+  },
+  "뱅": {
+    "lolName": "",
+    "twitchId": "bang",
+    "youtube": "UCZ49HaU_D0Tlf1aDA2jU_Vg",
+    "youtubeFull": "UCnDcpS7XLQ9KFPqULb9TH8g",
+    "pos": "coach",
+    "tier": "",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/635fd43c-ec04-46cb-8834-960c9810cd5f-profile_image-300x300.png"
   },
   "룩삼": {
     "lolName": "봉춤진효",
@@ -145,6 +164,15 @@
     "tier": "Gold",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/21af3d33e8fdcfe9-profile_image-300x300.jpeg"
   },
+  "플레임": {
+    "lolName": "",
+    "twitchId": "flamekr",
+    "youtube": "UCI6Ro_MOr36re4Bhb7nCY7g",
+    "tgd": "flamekr",
+    "pos": "coach",
+    "tier": "",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/c5c416f5-9e95-4d72-b1dc-54d15e8b1657-profile_image-300x300.png"
+  },
   "치킨쿤": {
     "lolName": "칰지컬",
     "twitchId": "ch1ckenkun",
@@ -193,6 +221,15 @@
     "tier": "Gold",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/a1281685-d88d-420a-8aeb-437b6851a170-profile_image-300x300.png"
   },
+  "캡틴잭": {
+    "lolName": "",
+    "twitchId": "hwkang2",
+    "youtube": "UC7wtTnMorJi_d93lb_P2Xow",
+    "tgd": "hwkang2",
+    "pos": "coach",
+    "tier": "",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/db3f827a-e846-4759-9de4-7853ad225bad-profile_image-300x300.png"
+  },
   "중력": {
     "lolName": "진지빡겜 중력",
     "twitchId": "jungryeok",
@@ -240,5 +277,14 @@
     "pos": "Support",
     "tier": "Gold",
     "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/c5a2baa2-74ed-4b72-b047-8326572c9bfa-profile_image-300x300.png"
+  },
+  "큐베": {
+    "lolName": "",
+    "twitchId": "lol_cuvee",
+    "youtube": "UCoreuQ0uHZ4-dAb1hIIzu8Q",
+    "tgd": "lol_cuvee",
+    "pos": "coach",
+    "tier": "",
+    "profile": "https://static-cdn.jtvnw.net/jtv_user_pictures/5b0cff5d-9df9-4fef-9c94-73d018e712ed-profile_image-300x300.png"
   }
 }

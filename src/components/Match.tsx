@@ -1,15 +1,14 @@
 import { useState } from "react";
 import { TooltipWrapper } from "react-tooltip";
-import { getTeam } from "../team";
-import { MatchData } from "../types";
-import { getKDA, getRelativeTime } from "../utils";
 import Champion from "./Champion";
-import PlayerItem from "./PlayerItem";
+import PlayerStats from "./PlayerStats";
+import { getTeam } from "../team";
+import { getKDA, getRelativeTime } from "../utils";
+import { MatchData } from "../types";
 
 type MatchProps = {
   match: MatchData;
-  myTeam: MatchData[];
-  otherTeam: MatchData[];
+  data: MatchData[];
 };
 
 const MULTI_KILL: { [num: number]: string } = {
@@ -19,8 +18,10 @@ const MULTI_KILL: { [num: number]: string } = {
   5: "펜타킬",
 };
 
-export default function Match({ match, myTeam, otherTeam }: MatchProps) {
-  const [shown, show] = useState(false);
+export default function Match({ match, data }: MatchProps) {
+  const [expanded, setExpanded] = useState(false);
+  const myTeam = data.filter((d) => d.teamId === match.teamId);
+  const otherTeam = data.filter((d) => d.teamId !== match.teamId);
 
   const myTeamKills = myTeam.reduce((prev, cur) => {
     prev += cur.kills;
@@ -31,26 +32,21 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
     return prev;
   }, 0);
   const maxDamagesDealt = Math.max(
-    ...myTeam.map((m) => m.totalDamageDealtToChampions),
-    ...otherTeam.map((m) => m.totalDamageDealtToChampions)
+    ...data.map((m) => m.totalDamageDealtToChampions)
   );
-  const maxDamagesTaken = Math.max(
-    ...myTeam.map((m) => m.totalDamageTaken),
-    ...otherTeam.map((m) => m.totalDamageTaken)
-  );
+  const maxDamagesTaken = Math.max(...data.map((m) => m.totalDamageTaken));
   const isDetailed = match.totalDamageTaken !== 0;
 
   return (
     <div
-      key={match.gameId}
-      className={`${
+      className={`rounded-lg p-2 m-2 ${
         match.win ? "bg-blue-100" : "bg-red-100"
-      } rounded-lg p-2 m-2`}
+      }`}
     >
       <div
         className="flex flex-row items-center justify-center m-2 cursor-pointer"
         onClick={() => {
-          show((prev) => !prev);
+          setExpanded((prev) => !prev);
         }}
       >
         <div className="p-2 sm:p-4">
@@ -71,7 +67,7 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
           ></Champion>
         </div>
         <div className="w-32 m-2 text-center">
-          <div className="font-bold">{getKDA(match)}</div>
+          <div className="font-medium">{getKDA(match)}</div>
           <div>
             {match.kills}/{match.deaths}/{match.assists} (
             {(((match.kills + match.assists) / myTeamKills) * 100).toFixed()}%)
@@ -112,14 +108,10 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
           ))}
         </div>
       </div>
-      {shown && (
+      {expanded && (
         <div className="m-2 overflow-x-auto">
           <table
-            className={`text-center table-fixed ${
-              isDetailed
-                ? "w-[46rem] md:w-[58rem]"
-                : "w-[21.5rem] md:w-[28.5rem]"
-            } text-xs md:text-base mx-auto`}
+            className={`text-center table-fixed w-0 mx-auto text-xs md:text-base`}
           >
             <thead>
               <tr>
@@ -130,36 +122,41 @@ export default function Match({ match, myTeam, otherTeam }: MatchProps) {
                 <th className="p-1 w-16 md:w-24">딜량</th>
                 {isDetailed && <th className="p-1 w-16 md:w-24">피해량</th>}
                 <th className="p-1 w-12 md:w-16">G</th>
-                {isDetailed && <th className="p-1 w-10 md:w-14">CS</th>}
-                {isDetailed && <th className="p-1 w-12 md:w-16">와드</th>}
-                {isDetailed && <th className="p-1 w-10 md:w-12">VS</th>}
-                {isDetailed && <th className="p-1 w-52">아이템</th>}
+                {isDetailed && (
+                  <>
+                    <th className="p-1 w-10 md:w-14">CS</th>
+                    <th className="p-1 w-12 md:w-16">와드</th>
+                    <th className="p-1 w-10 md:w-12">VS</th>
+                    <th className="p-1 w-52">아이템</th>
+                  </>
+                )}
                 <th className="p-1 w-8"></th>
               </tr>
             </thead>
             <tbody>
               {myTeam.map((m) => (
-                <PlayerItem
+                <PlayerStats
                   key={m.summonerName}
                   match={m}
                   totalKills={myTeamKills}
                   maxDamagesDealt={maxDamagesDealt}
                   maxDamagesTaken={maxDamagesTaken}
-                  isDetailed={isDetailed}
-                ></PlayerItem>
+                ></PlayerStats>
               ))}
               <tr>
-                <td colSpan={isDetailed ? 12 : 7}>vs</td>
+                <td colSpan={isDetailed ? 12 : 7}>
+                  {myTeamKills} <span className="font-bold">vs</span>{" "}
+                  {otherTeamKills}
+                </td>
               </tr>
               {otherTeam.map((m) => (
-                <PlayerItem
+                <PlayerStats
                   key={m.summonerName}
                   match={m}
                   totalKills={otherTeamKills}
                   maxDamagesDealt={maxDamagesDealt}
                   maxDamagesTaken={maxDamagesTaken}
-                  isDetailed={isDetailed}
-                ></PlayerItem>
+                ></PlayerStats>
               ))}
             </tbody>
           </table>
