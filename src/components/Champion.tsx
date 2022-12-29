@@ -1,4 +1,4 @@
-import champions from "../data/champions.json";
+import CHAMPIONS from "../data/champions.json";
 
 type ChampionProps = {
   championId: string | number;
@@ -7,23 +7,21 @@ type ChampionProps = {
 };
 
 export default function Champion(props: ChampionProps) {
-  const champion = champions[props.championId as keyof typeof champions];
-  return props.showName ? (
-    <div>
-      <img
-        className={props.className}
-        src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${champion.id}.png`}
-        alt={champion.name}
-        title={champion.name}
-      ></img>
-      {champion.name}
-    </div>
-  ) : (
+  const champion = CHAMPIONS[props.championId as keyof typeof CHAMPIONS];
+  const img = (
     <img
       className={props.className}
       src={`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${champion.id}.png`}
       alt={champion.name}
       title={champion.name}
     ></img>
+  );
+  return props.showName ? (
+    <div>
+      {img}
+      {champion.name}
+    </div>
+  ) : (
+    img
   );
 }
