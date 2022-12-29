@@ -28,7 +28,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
   return defer({
     streams: fetch(`https://api.twgg.workers.dev/streams?${params}`, {
       signal: request.signal,
-    }),
+    }).then((r) => r.json()),
   });
 }
 
