@@ -7,12 +7,12 @@ export const TEAMS = [
     bgColor: "bg-orange-100",
   },
   {
-    name: "Team 푸린",
+    name: "푸켓몬스터",
     color: "text-pink-600",
     bgColor: "bg-pink-100",
   },
   {
-    name: "Team 류제홍",
+    name: "못말린다니깐",
     color: "text-green-600",
     bgColor: "bg-lime-100",
   },
