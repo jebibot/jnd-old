@@ -2,7 +2,7 @@ import PLAYERS from "./data/players.json";
 
 export const TEAMS = [
   {
-    name: "Team 얍얍",
+    name: "감자해적단",
     color: "text-orange-600",
     bgColor: "bg-orange-100",
   },
@@ -17,7 +17,7 @@ export const TEAMS = [
     bgColor: "bg-lime-100",
   },
   {
-    name: "Team 따효니",
+    name: "따봉디제도",
     color: "text-cyan-600",
     bgColor: "bg-sky-100",
   },
