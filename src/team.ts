@@ -22,7 +22,7 @@ export const TEAMS = [
     bgColor: "bg-sky-100",
   },
   {
-    name: "Team 한동숙",
+    name: "칠순집 막내아들",
     color: "text-indigo-600",
     bgColor: "bg-indigo-100",
   },
