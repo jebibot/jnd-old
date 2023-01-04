@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage";
 import Index, { loader as indexLoader } from "./components/Index";
+import Overview from "./components/Overview";
 import Root, { loader as rootLoader } from "./components/Root";
 import Stats from "./components/Stats";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         children: [
           { index: true, element: <Index />, loader: indexLoader },
+          { path: "overview", element: <Overview /> },
           { path: ":player", element: <Stats /> },
         ],
       },
