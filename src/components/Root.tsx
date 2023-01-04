@@ -1,5 +1,4 @@
 import {
-  LoaderFunctionArgs,
   Outlet,
   ScrollRestoration,
   useLocation,
@@ -11,13 +10,6 @@ import PLAYERS from "../data/players.json";
 
 import "react-tooltip/dist/react-tooltip.css";
 import { useEffect } from "react";
-
-export function loader({ request }: LoaderFunctionArgs) {
-  return fetch("https://jnd-data.s3.ap-northeast-2.amazonaws.com/data.json", {
-    cache: "no-cache",
-    signal: request.signal,
-  });
-}
 
 export default function Root() {
   const navigate = useNavigate();

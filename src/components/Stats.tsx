@@ -1,12 +1,12 @@
-import { useParams, useRouteLoaderData } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ChampionStats from "./ChampionStats";
 import Links from "./Links";
 import Match from "./Match";
 import RankedPosition from "./RankedPosition";
 import { getTeam } from "../team";
-import { MatchData } from "../types";
 
 import PLAYERS from "../data/players.json";
+import MATCHES from "../data/matches.json";
 
 import "react-tooltip/dist/react-tooltip.css";
 
@@ -20,8 +20,7 @@ export default function Stats() {
     throw new Error("스트리머를 찾을 수 없습니다!");
   }
 
-  const data = useRouteLoaderData("root") as MatchData[];
-  const matches = data.filter((s) => s.summonerName === player);
+  const matches = MATCHES.filter((s) => s.summonerName === player);
   return (
     <>
       <div className="flex flex-row items-center bg-gray-200 rounded-lg p-2 m-2">
@@ -65,7 +64,7 @@ export default function Stats() {
         <Match
           key={m.gameId}
           match={m}
-          data={data.filter((d) => d.gameId === m.gameId)}
+          data={MATCHES.filter((d) => d.gameId === m.gameId)}
         ></Match>
       ))}
     </>
