@@ -32,7 +32,7 @@ export default function Match({ match, data }: MatchProps) {
     return prev;
   }, 0);
   const maxDamagesDealt = Math.max(
-    ...data.map((m) => m.totalDamageDealtToChampions)
+    ...data.map((m) => m.totalDamageDealtToChampions),
   );
   const maxDamagesTaken = Math.max(...data.map((m) => m.totalDamageTaken));
   const isDetailed = match.totalDamageTaken !== 0;

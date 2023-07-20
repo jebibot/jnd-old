@@ -128,7 +128,7 @@ export default function Index() {
                             data.twitchId
                           ].thumbnail_url.replace(
                             "{width}x{height}",
-                            "440x248"
+                            "440x248",
                           )}" alt="Twitch"></img>`}
                         >
                           <span className="text-black">
