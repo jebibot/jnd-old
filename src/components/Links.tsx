@@ -55,7 +55,7 @@ export default function Links({ data, className, childClassName }: LinksProps) {
             >
               <img src={v.logo} className={childClassName} alt={v.name}></img>
             </a>
-          )
+          ),
       )}
     </div>
   );

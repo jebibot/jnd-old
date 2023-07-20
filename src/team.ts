@@ -28,7 +28,7 @@ export const TEAMS = [
   },
 ];
 const teamMap = Object.fromEntries(
-  Object.keys(PLAYERS).map((p, i) => [p, Math.floor(i / 6)])
+  Object.keys(PLAYERS).map((p, i) => [p, Math.floor(i / 6)]),
 );
 
 export function getTeam(name: string | undefined) {
